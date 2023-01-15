@@ -15,12 +15,22 @@ header-section
 .first-section img {
     width: 80%;
     height: 40%;
-    margin-bottom: 50px;
+    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 nav {
     display: flex;
     justify-content: center;
+}
+
+.nav-header {
+    margin-right: 35%;
+}
+
+.nav-option {
+    margin-right: 35%;
+    margin-right: 10%;
 }
 
 .nav-option ul {
@@ -60,7 +70,24 @@ nav ul li a {
     text-align: center;
     grid-row-gap: 50px;
     grid-column-gap: 50px;
+    margin-right: 5%;
 
+}
+
+.features-article {
+    margin-left: 5%;
+}
+
+#or-our-color {
+    color: #000000;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#features-color {
+    color: #FF900E;
+    font-weight: bolder;
+    font-size: xx-large;
 }
 
 /*-----------------------
@@ -160,6 +187,63 @@ experience-section
     margin-top: 3%;
 }
 
+.awards-winning {
+    display: flexbox;
+    border: 2px solid #FF900E;
+    margin-left: 40px;
+    width: 178px;
+    transition: transform 2s;
+
+}
+
+.project-finished {
+    display: flexbox;
+    border: 2px solid #FF900E;
+    margin-left: 40px;
+    width: 178px;
+    transition: transform 2s;
+}
+
+.Clients-worked {
+    display: flexbox;
+    border: 2px solid #FF900E;
+    margin-left: 40px;
+    width: 178px;
+    transition: transform 2s;
+}
+
+.email {
+    display: flexbox;
+    border: 2px solid #FF900E;
+    margin-left: 40px;
+    width: 178px;
+    transition: transform 2s;
+}
+
+/* hover  */
+.awards-winning:hover {
+    transform: rotate(-50deg);
+    background-color: #908170;
+
+}
+
+.project-finished:hover {
+    transform: rotate(50deg);
+    background-color: #908170;
+
+}
+
+.Clients-worked:hover {
+    transform: rotate(-50deg);
+    background-color: #908170;
+
+}
+
+.email:hover {
+    transform: rotate(50deg);
+    background-color: #908170;
+}
+
 /*----------------------------
 ------------------------------
  sponser-section 
@@ -169,12 +253,36 @@ experience-section
     display: grid;
     justify-content: center;
     text-align: center;
+    margin-top: 2%;
 }
 
 .sponsers-header {}
 
 .sponsers {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+    margin-top: 2%;
+}
+
+.spotify {}
+
+.amazon {}
+
+.google {}
+
+.telerama {}
+
+.figma {}
+
+
+/* bonuse-section */
+.big-Projects {
+    background-color: white;
+    width: 1047px;
+    height: 1663px;
+
+
 }
 
 /*-----------------------
@@ -204,4 +312,127 @@ medea-query
 -------------------------------
 ------------------------------ */
 
-@media screen and (max-width:688px) {}
+@media screen and (max-width:600px) {
+    .features {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+
+    }
+
+    .all-iamges {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .experience-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+
+    }
+
+    .love-enjoy {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        margin-left: 15%;
+
+    }
+
+    .dexktop-mobile {
+        height: max-content;
+        width: 80%;
+    }
+
+    .builder {
+        height: max-content;
+        width: 80%;
+
+    }
+
+    .design {
+        height: max-content;
+        width: 80%;
+
+    }
+
+    .edit {
+        height: max-content;
+        width: 80%;
+    }
+
+    .experience {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .architect-image {
+        height: auto;
+        width: 100%;
+    }
+
+    .ten-experience {
+        margin-top: 10%;
+        display: grid;
+        justify-content: center;
+    }
+
+    .experience-button {
+        position: relative;
+        bottom: 0px;
+        right: 0px;
+        align-items: center;
+    }
+
+    .icon-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .awards-winning {
+        margin-top: 10%;
+    }
+
+    .project-finished {
+        margin-top: 10%;
+    }
+
+    .Clients-worked {
+        margin-top: 10%;
+    }
+
+    .email {
+        margin-top: 10%;
+    }
+
+    .sponsers {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin-top: 20%;
+    }
+
+    .spotify {
+        margin-top: 10%;
+    }
+
+    .amazon {
+        margin-top: 10%;
+    }
+
+    .google {
+        margin-top: 10%;
+    }
+
+    .telerama {
+        margin-top: 10%;
+    }
+
+    .figma {
+        margin-top: 10%;
+    }
+}
