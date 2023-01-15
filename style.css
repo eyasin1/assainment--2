@@ -13,8 +13,9 @@ header-section
 }
 
 .first-section img {
-    width: 1440px;
-    height: 700px;
+    width: 80%;
+    height: 40%;
+    margin-bottom: 50px;
 }
 
 nav {
@@ -39,18 +40,26 @@ nav ul li a {
 
 }
 
+.brand-new {
+    font-size: xx-large;
+    font-weight: bolder;
+}
 
 /* features-section */
 .features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-top: 5%;
 }
 
 .all-iamges {
     display: grid;
     grid-template-columns: 2fr 2fr;
+    text-align: center;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
 
 }
 
@@ -64,13 +73,91 @@ experience-section
 .experience-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.love-enjoy {
+    margin-right: 15%;
+}
+
+.love-enjoy-header {
+    border-left: solid #FF900E;
+    padding-left: 2%;
+}
+
+.dexktop-mobile {
+    background-color: #ffff;
+    padding: 3%;
+    margin-top: 3%;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+}
+
+.builder {
+    background-color: #ffff;
+    padding: 3%;
+    margin-top: 3%;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+
+
+}
+
+.design {
+    background-color: #ffff;
+    padding: 3%;
+    margin-top: 3%;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+}
+
+
+.edit {
+    background-color: #ffff;
+    padding: 3%;
+    margin-top: 3%;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 15%);
+    border-radius: 15px;
+
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.architect-image {
+    width: 708px;
+}
+
+.experience-button {
+    position: relative;
+    bottom: 50px;
+    right: 30px;
+    background-color: #FF900E;
+    height: 100px;
+    width: 142px;
 }
 
 /* -------------------
         some-facts 
 ---------------------- */
+.some-facts {
+    display: grid;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+/*-------------------
+ some-experience 
+-------------- */
 .icon-image {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
 }
 
 /*----------------------------
@@ -78,6 +165,14 @@ experience-section
  sponser-section 
 ------------------------------
 ------------------------------ */
+.sponsers-section {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.sponsers-header {}
+
 .sponsers {
     display: flex;
 }
